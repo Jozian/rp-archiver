@@ -10,6 +10,7 @@ RUN adduser --uid 1000 --disabled-password --gecos '' --home /srv/rp-archiver rp
 RUN apt-get -yq update \
         && DEBIAN_FRONTEND=noninteractive apt-get install -y \
                 unattended-upgrades \
+                ca-certificates \
         && rm -rf /var/lib/apt/lists/* \
         && apt-get clean
 COPY --from=builder /root/rp-archiver/rp-archiver /usr/bin/
