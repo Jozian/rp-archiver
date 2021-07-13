@@ -1,3 +1,11 @@
+v6.4.0
+----------
+ * 6.4.0 Release Candidate
+
+v6.3.0
+----------
+ * Don't try to load org languages
+
 v6.2.0
 ----------
  * Bump CI testing to PG 11 and 12
